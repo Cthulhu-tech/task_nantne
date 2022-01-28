@@ -1,0 +1,10 @@
+@mixin text($color: white, $maxWidth: 500px, $fontFamily: "", $size: 18px, $topMargin: 0px, $weight: 300, $stretch: normal) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-align: center;
+  margin-top: $topMargin;
+  font-stretch: $stretch;
+  width: min(100%, $maxWidth);
+  font-family: $fontFamily;
+}

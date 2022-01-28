@@ -11,12 +11,14 @@
     "sass": "^1.49.0"
   },
   "scripts": {
-    "start": "gulp sass-compile && nodemon index.js"
+    "start": "gulp",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "gulp-pug": "^5.0.0",
     "pug": "^3.0.2"
   }
 }
