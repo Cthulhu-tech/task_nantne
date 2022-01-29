@@ -5,39 +5,106 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
         link(rel="stylesheet" href="../style/header.css")
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous")
+        link(rel="stylesheet" href="../style/description.css")
+        link(rel="stylesheet" href="../style/content.css")
+        link(rel="stylesheet" href="../style/expertise.css")
+        link(rel="stylesheet" href="../style/team.css")
+        link(rel="stylesheet" href="../style/ourWorks.css")
+        link(rel="stylesheet" href="../style/commentaries.css")
     body
-        header(class=".container-xxl")
-                section(class="header_text-container")  
-                    p(class="header_text-container-title") We Are Awesome Creative Agency
-                    div(class="header_text-container-line")
-                    p(class="header_text-container-text") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                    button(class="header_text-container-button") LEARN MORE
-                nav(class="container-xxl navigation_container")
-                        section(class="screen_blue")
-                        section(class="sub-navigation_container")
-                            section(class="section-nav_logo")
-                                img(src="../img/header/header_logo.png", alt="logo" class="image_logo")
-                                img(src="../img/header/header_logo-text.png", alt="logo-text" class="image_logo")
-                            section(class="section-nav_link")
-                                ul(class="nav")
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-info small" href="#") HOME
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-light small" href="#") ABOUT
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-light small" href="#") EXPERTISE
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-light small" href="#") TEAMS
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-light small" href="#") WORKS
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-light small" href="#") PEOPLE SAY
-                                    li(class="nav-item nav_link")
-                                        a(class="nav-link text-light small" href="#") CONTACT
-                
-    main
-        
-            
+        header(class="container")
+            nav(class="container-fluid")
+                section(class="conteiner_navigation")
+                    section(class="header_container_logo")
+                        img(class="header_logo" src="../img/header/header_logo.png")
+                        img(class="header_logo" src="../img/header/header_logo-text.png")
+                    section(class="header_container_li")
+                        ul(class="container_ul")
+                            li(class="container_li")
+                                a(class="container_a active") HOME
+                            li(class="container_li")
+                                a(class="container_a") ABOUT
+                            li(class="container_li")
+                                a(class="container_a") EXPERTISE
+                            li(class="container_li")
+                                a(class="container_a") TEAMS
+                            li(class="container_li")
+                                a(class="container_a") WORKS
+                            li(class="container_li")
+                                a(class="container_a") PEOPLE SAY
+                            li(class="container_li")
+                                a(class="container_a") CONTACT
+            section(class="section_text")
+                p(class="section_text-title") We Are Awesome Creative Agency
+                section(class="section_text-line")
+                p(class="section_text-description") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                button(class="header_button") LEARN MORE
+    main(class="container")
+        section(class="description_container")
+            img(class="description_container_logo" src="../img/content/content_big-logo.png")
+            section(class="description_container_text")
+                p(class="descroption_conteiner_text_title") OUR STORY
+                p(class="descroption_conteiner_text_description") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                p(class="descroption_conteiner_text_description") Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                button(class="header_button") LEARN MORE
+        section(class="content_video")
+            section(class="content_brush")
+            section(class="content_video_title")
+            iframe(class="content_video_iframe" src="https://www.youtube.com/embed/KvUgaHTNit4?controls=0" allowfullscreen)
+        section(class="expertise")
+            p(class="expertise_title") EXPERTISE
+            p(class="expertise_title_desctiption") Lorem ipsum, dolor sit amet proin gravida vel velit
+            section(class="expertise_line")
+            section(class="expertise_about")
+                section(class="expertise_about_container row")
+
+                    mixin item(text_title, text_description, src, alt ,sectionClass , imgClass, titleClass, descriptionClass)
+                        section(class=sectionClass)
+                            img(src=src, alt=alt class=imgClass)
+                            p(class=titleClass)= text_title
+                            p(class=descriptionClass)= text_description
+    
+                    +item("WEB DISIGIN & DEVELOPMENT", "This is photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.", "../img/content/content_top-left-image.png", "./", "expertise_about-sub_container col-4 right", "expertise_about-sub_container_image", "expertise_about-sub_container_title", "expertise_about-sub_container_description")
+                    +item("BRANDING INDENTITY", "This is photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.", "../img/content/content_top-center-image.png", "./", "expertise_about-sub_container col-4 right", "expertise_about-sub_container_image", "expertise_about-sub_container_title", "expertise_about-sub_container_description")
+                    +item("MOBILE APP", "This is photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.", "../img/content/content_top_right-image.png", "./", "expertise_about-sub_container col-4", "expertise_about-sub_container_image", "expertise_about-sub_container_title", "expertise_about-sub_container_description")
+                    section(class="middle_line") 
+                    +item("SEARCHENGINE OPTIMIZATION", "This is photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.", "../img/content/content_image-bottom-left.png", "./", "expertise_about-sub_container col-4 right", "expertise_about-sub_container_image bottom_image", "expertise_about-sub_container_title", "expertise_about-sub_container_description")
+                    +item("GAME DEVELOPMENT", "This is photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.", "../img/content/content_bottom-center.png", "./", "expertise_about-sub_container col-4 right", "expertise_about-sub_container_image bottom_image", "expertise_about-sub_container_title", "expertise_about-sub_container_description")
+                    +item("MADE WITH LOVE", "This is photoshop's version of Lorem ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.", "../img/content/bottom_right-image.png", "./", "expertise_about-sub_container col-4", "expertise_about-sub_container_image bottom_image", "expertise_about-sub_container_title", "expertise_about-sub_container_description")
+        section(class="section_team")
+            section(class="content_brush")
+            section(class="section_team_content")
+                p(class="section_team-title") MEET OUR AMAZING TEAM
+                p(class="section_team-text") Lorem ipsum dolor sit amet proin gravida nibh vel velit
+                section(class="middle_line_team")
+
+                section(class="team_container_info")
+                    mixin team(name, work, src, alt ,sectionClass , imgClass, titleClass, descriptionClass)
+                        section(class=sectionClass)
+                            img(src=src, alt=alt class=imgClass)
+                            p(class=titleClass)= name
+                            p(class=descriptionClass)= work
+                    +team("SEMF UCUK", "SEO & FOUNDER", "../img/commentaries/team_image.jpg" , "./", "sub_team_container_info", "img_team", "description_title" , "description_text")
+                    +team("DIK ADALIN", "ENGINER", "../img/commentaries/team_image.jpg" , "./", "sub_team_container_info", "img_team","description_title" , "description_text")
+                    +team("JENG KOL", "DESIGNER", "../img/commentaries/team_image.jpg" , "./", "sub_team_container_info", "img_team","description_title" , "description_text")
+                    +team("PET ROMAK", "MARKETING", "../img/commentaries/team_image.jpg" , "./", "sub_team_container_info", "img_team","description_title" , "description_text")
+
+                section(class="conteiner_team_info")
+                p(class="text_team") Become part of our dream team, let's join us !
+                button(class="button_team") WE ARE HIRING
+        section(class="conteiner_our-works")
+            section(class="conteiner_link")
+                p(class="container_title-our-works") OUR WORKS
+                a(class="link-our-works") See All Project in dribble
+                    div(class="container_clip")
+            section(class="container_works")
+            section(class="container_button")
+                button(class="button_team_works") LOAD MORE
+
+        section(class="container_commentaries")
+            section(class="content_brush")
+            section(class="container_commentaries_people")
+
     footer

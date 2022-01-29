@@ -1,0 +1,42 @@
+@import "./mixin.scss";
+
+.description_container{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.description_container_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.description_container_text{
+  max-width: 540px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.descroption_conteiner_text_title{
+  width: 100%;
+  font-size: 24px;
+  margin-top: 60px;
+  text-align: left;
+  font-weight: 100;
+  font-family: 'Playfair Display', serif;
+}
+.descroption_conteiner_text_description{
+  color: gray;
+  font-size: 14px;
+  margin-top: 3px;
+  word-spacing: 1px;
+}
+.description_container_logo{
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.button_team{
+  @include button(140px, 40px);
+}

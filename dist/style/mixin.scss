@@ -1,16 +1,9 @@
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1600px
-);
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1980px
-);
+@mixin button($width, $height){
+  width: $width;
+  height: $height;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: transparent;
+  color: var(--main-header-color);
+  border: 1px solid var(--main-header-color);
+}

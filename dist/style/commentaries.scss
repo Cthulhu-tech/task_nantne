@@ -1,0 +1,13 @@
+.container_commentaries{
+  width: 100%;
+  display: flex;
+  min-height: 500px;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background: url("../img/commentaries/background_content-team-image.png") no-repeat top;
+}
+
+.container_commentaries_people{
+  max-width: 760px;
+}
