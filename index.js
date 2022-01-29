@@ -23,7 +23,7 @@ http.createServer(async (request, response) => {
             break;
         default:
                 if(request.url === "/"){
-                    const html = fs.readFileSync(__dirname + './pug/index.html', 'utf8');
+                    const html = fs.readFileSync(__dirname + '../pug/index.html', 'utf8');
                     response.writeHead(200, {"Content-Type": 'text/html'});
                     response.end(html);
                 }else if(request.url === "/favicon"){
