@@ -13,7 +13,9 @@
     "pug": "^3.0.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
