@@ -1,10 +1,16 @@
-@mixin text($color: white, $maxWidth: 500px, $fontFamily: "", $size: 18px, $topMargin: 0px, $weight: 300, $stretch: normal) {
-  color: $color;
-  font-size: $size;
-  font-weight: $weight;
-  text-align: center;
-  margin-top: $topMargin;
-  font-stretch: $stretch;
-  width: min(100%, $maxWidth);
-  font-family: $fontFamily;
-}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1600px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1980px
+);
