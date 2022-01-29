@@ -23,7 +23,7 @@ http.createServer(async (request, response) => {
             break;
         default:
                 if(request.url === "/"){
-                    const html = fs.readFileSync(__dirname + '../pug/index.html', 'utf8');
+                    const html = fs.readFileSync(__dirname + '/pug/index.html', 'utf8');
                     response.writeHead(200, {"Content-Type": 'text/html'});
                     response.end(html);
                 }else if(request.url === "/favicon"){
@@ -61,7 +61,7 @@ const fileResponse = async(pathToPage, response, contentType, documentType) => {
 const fileResponsePng = (pathToPage, response) => {
     try
     {
-      const document = fs.readFileSync(path.join(`${__dirname}//src${pathToPage}`));  
+      const document = fs.readFileSync(path.join(`${__dirname}/${pathToPage}`));  
       response.writeHead(200, {'Content-Type': 'text/png' ,'Content-Length': document.length});
       response.write(document);
       response.end();
