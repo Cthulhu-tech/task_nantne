@@ -55,9 +55,9 @@ const fileResponse = async(pathToPage, response, contentType, documentType) => {
       response.writeHead(500, {'Content-Type': contentType});
       response.end();
     }
-  }
+}
 
-  const fileResponsePng = (pathToPage, response) => {
+const fileResponsePng = (pathToPage, response) => {
     try
     {
       const document = fs.readFileSync(path.join(`${__dirname}//src${pathToPage}`));  
@@ -70,4 +70,4 @@ const fileResponse = async(pathToPage, response, contentType, documentType) => {
       response.writeHead(500, {'Content-Type': 'text/png'});
       response.end();
     }
-  }
+}
