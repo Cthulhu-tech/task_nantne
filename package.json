@@ -11,7 +11,7 @@
     "sass": "^1.49.0"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "author": "",
