@@ -1,5 +1,4 @@
 const http = require("http");
-const pug = require('pug');
 const fs = require('fs');
 const path = require('path');
 
