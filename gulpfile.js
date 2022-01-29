@@ -17,7 +17,7 @@ gulp.task('pug', async (done) => {
 
     gulp.src('./dist/**/*.pug')
     .pipe(pug({pretty: true}))
-    .pipe(gulp.dest('./src/'));
+    .pipe(gulp.dest('./'));
 
     done();
 })

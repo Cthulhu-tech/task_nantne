@@ -13,7 +13,7 @@
     "pug": "^3.0.2"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "gulp",
     "build": "node index.js",
     "dev": "nodemon index.js"
   },
