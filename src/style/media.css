@@ -220,10 +220,6 @@
     flex-direction: row !important;
   }
 
-  .mobile_navigation {
-    min-height: 100%;
-  }
-
   .mobile_navigation_li {
     margin: 20px !important;
   }
