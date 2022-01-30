@@ -223,9 +223,6 @@
   .mobile_navigation_li {
     margin: 20px !important;
   }
-  .mobile_navigation_li {
-    display: none !important;
-  }
   .mobile_navigation_toggle{
     display: none !important;
   }
