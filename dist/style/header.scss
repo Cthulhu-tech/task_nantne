@@ -9,8 +9,11 @@
 .container{
     padding: 0;
 }
+nav{
+    max-width: 100%;
+}
 header {
-    height: 670px;
+    min-height: 670px;
     position: relative;
     background: url("../img/header/header_background-image.png") no-repeat top;
 }

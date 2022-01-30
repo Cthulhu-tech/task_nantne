@@ -15,10 +15,34 @@ html(lang="en")
         link(rel="stylesheet" href="../src/style/commentaries.css")
         link(rel="stylesheet" href="../src/style/formStyle.css")
         link(rel="stylesheet" href="../src/style/footerStyle.css")
-        script(src='/javascripts/app.js')
+        link(rel="stylesheet" href="../src/style/media.css")
+        link(rel="stylesheet" href="../src/style/mobile.css")
+        link(rel="stylesheet" href="../src/style/popup.css")
+        script(src='../app.js' defer) 
     body
+        section(class="mobile_navigation close")
+            ul(class="mobile_navigation_ul")
+                li(class="mobile_navigation_li mobile_navigation_toggle")
+                    div(class="mobile_navigation_burger_line open")
+                    div(class="mobile_navigation_burger_line open")
+                    div(class="mobile_navigation_burger_line open")
+                    a(class="mobile_navigation_a")
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") HOME
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") ABOUT
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") EXPERTISE
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") TEAMS
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") WORKS
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") PEOPLE SAY
+                li(class="mobile_navigation_li")
+                    a(class="mobile_navigation_a") CONTACT
         header(class="container")
-            nav(class="container-fluid")
+            nav
                 section(class="conteiner_navigation")
                     section(class="header_container_logo")
                         img(class="header_logo" src="../src/img/header/header_logo.png")
@@ -44,6 +68,11 @@ html(lang="en")
                 section(class="section_text-line")
                 p(class="section_text-description") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
                 button(class="header_button") LEARN MORE
+    div(class="popup close_popup")
+            div(class="close_button_popup")
+                div(class="sub_close_button_popup")
+            div(class="sub_popup")
+                <iframe class="content_video_iframe" src="https://www.youtube.com/embed/KvUgaHTNit4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     main(class="container")
         section(class="description_container")
             img(class="description_container_logo" src="../src/img/content/content_big-logo.png")
@@ -53,9 +82,11 @@ html(lang="en")
                 p(class="descroption_conteiner_text_description") Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                 button(class="header_button") LEARN MORE
         section(class="content_video")
-            section(class="content_brush")
+            section(class="content_brush video")
+                div(class="content_play")
+                    img(src="../src/img/play.png")
+                p(class="content_play_text") WATCH YOUR STORY
             section(class="content_video_title")
-            iframe(class="content_video_iframe" src="https://www.youtube.com/embed/KvUgaHTNit4?controls=0" allowfullscreen)
         section(class="expertise")
             p(class="expertise_title") EXPERTISE
             p(class="expertise_title_desctiption") Lorem ipsum, dolor sit amet proin gravida vel velit
@@ -115,11 +146,11 @@ html(lang="en")
                 p(class="commentaries_name") JANE GALADRIEL
                 p(class="commentaries_work") CEO TENGKUREP
                 section(class="image_commentaries_container")
-                    img(class="commentaries_commentaries_image" src="../src/img/commentaries/comment_image-1.png")
-                    img(class="commentaries_commentaries_image" src="../src/img/commentaries/comment_image-2.png")
-                    img(class="commentaries_commentaries_image active" src="../src/img/commentaries/comment_image-3.png")
-                    img(class="commentaries_commentaries_image" src="../src/img/commentaries/comment_image-4.png")
-                    img(class="commentaries_commentaries_image" src="../src/img/commentaries/comment_image-5.png")
+                    img(class="commentaries_commentaries_image" data-index="1" src="../src/img/commentaries/comment_image-1.png")
+                    img(class="commentaries_commentaries_image" data-index="2" src="../src/img/commentaries/comment_image-2.png")
+                    img(class="commentaries_commentaries_image active" data-index="3" src="../src/img/commentaries/comment_image-3.png")
+                    img(class="commentaries_commentaries_image" data-index="4" src="../src/img/commentaries/comment_image-4.png")
+                    img(class="commentaries_commentaries_image" data-index="5" src="../src/img/commentaries/comment_image-5.png")
         section(class="container_form")
             p(class="container_form_paragraph") GIVE US A GOOD NEWS
             form
@@ -141,10 +172,10 @@ html(lang="en")
                 p(class="title_container_footer") OUR STUDIO
                 section(class="container_footer_address_image")
                     section(class="container_footer_address")
-                        img(class="container_footer_address_footer" src="./src/img/footer/footer-adress.png")
+                        img(class="container_footer_address_footer" src="../src/img/footer/footer-adress.png")
                         p(class="container_footer_address_footer_text") Ruko cucruk, Jl Radio luar dalem jos No.12-13, Kalideres - Jakarta Barat 11480 - Indonesia
                     section(class="container_footer_address")
-                        img(class="container_footer_address_footer" src="./src/img/footer/footer-phone.png")
+                        img(class="container_footer_address_footer" src="../src/img/footer/footer-phone.png")
                         p(class="container_footer_address_footer_text") (+62) 21-2224-3333
             section(class="container_footer_info right_stay")
                 p(class="title_container_footer") STAY IN TOUCH 

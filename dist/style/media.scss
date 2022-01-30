@@ -1,0 +1,213 @@
+@media screen and (max-width: 992px) {
+  .content_footer_menu{
+    align-items: center;
+    flex-direction: column;
+  }
+  .container_footer_link{
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container_footer_info{
+    align-items: center;
+    margin: 20px;
+  }
+  footer{
+    background: url("../img/footer/footer-background.png") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container_commentaries{
+    padding: 20px;
+    background: url(../img/commentaries/image_backgound.jpg)no-repeat center center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container_form{
+    padding: 20px;
+  }
+  .container_form_paragraph{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container_commentaries{
+    padding: 20px;
+    background: url(../img/commentaries/image_backgound.jpg)no-repeat center center;
+    background-size: cover;
+  }
+  .image_commentaries_container{
+    max-width: 100%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .team_container_info{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+  .section_team-text{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .text_team{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .conteiner_link{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .expertise{
+    padding: 20px;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+  .middle_line{
+    display: none;
+  }
+  .expertise_about_container{
+    max-width: 100%;
+    min-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .description_container{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .description_container_text{
+    margin: 0 auto;
+    align-items: center;
+  }
+  .descroption_conteiner_text_title{
+    align-items: center;
+  }
+  .description_container_logo{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .conteiner_navigation{
+    display: none;
+  }
+  .section_text-title{
+    text-align: center;
+  }
+  .section_text{
+    padding: 20px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .container_input_footer_image{
+    align-items: center;
+    flex-direction: column;
+  }
+  .container_input_footer{
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer_button{
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expertise_title_desctiption{
+    text-align: center;
+  }
+  .expertise_about-sub_container{
+    min-width: 250px !important;
+  }
+  .team_container_info{
+    min-height: 340px;
+  }
+  .section_team-title{
+    text-align: center;
+  }
+  .text_team{
+    padding: 20px;
+    text-align: center;
+  }
+  .container_foorer_text{
+    width: 100%;
+    text-align: center;
+  }
+  .container_footer_link{
+    padding: 20px;
+  }
+  .section_team-title{
+    margin-top: 20px;
+  }
+  .descroption_conteiner_text_description{
+    text-align: center;
+  }
+  .descroption_conteiner_text_title{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .description_container_logo{
+    width: 100%;
+  }
+  .sub_container_footer_link{
+    flex-direction: column;
+  }
+  .sub_container_footer_link_text{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .description_container_logo{
+    width: 100%;
+  }
+  .sub_container_footer_link{
+    flex-direction: column;
+  }
+  .sub_container_footer_link_text{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mobile_navigation{
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mobile_navigation{
+    display: flex;
+  }
+}
+
+@media screen and  (orientation: landscape) {
+  .mobile_navigation_ul{
+    flex-direction: row;
+  }
+  .mobile_navigation{
+    height: 100%;
+  }
+  .mobile_navigation_li{
+    margin: 20px;
+  }
+}
