@@ -10,7 +10,7 @@ http.createServer(async (request, response) => {
 
     switch (ext) {
         case '.js' :
-                fileResponse(name, response, 'text/javascript', '.js');
+                javascriptResponse(name, response, 'text/javascript', '.js');
             break;
         case '.css' :
                 fileResponse(name, response, 'text/css', '.css');
@@ -41,10 +41,10 @@ http.createServer(async (request, response) => {
     }
 }).listen(3000);
 
-const fileResponse = async(pathToPage, response, contentType, documentType) => {
+const fileResponse = (pathToPage, response, contentType, documentType) => {
     try
     {
-      const document = await fs.readFileSync(path.join(`${__dirname}//src//style//${pathToPage}${documentType}`), {
+      const document = fs.readFileSync(path.join(`${__dirname}//src//style//${pathToPage}${documentType}`), {
         encoding: 'utf8'
       });  
       response.writeHead(200, {'Content-Type': contentType ,'Content-Length': document.length});
@@ -69,6 +69,23 @@ const fileResponsePng = (pathToPage, response) => {
     catch (err)
     {
       response.writeHead(500, {'Content-Type': 'text/png'});
+      response.end();
+    }
+}
+
+const javascriptResponse = (pathToPage, response, contentType, documentType) => {
+    try
+    {
+      const document = fs.readFileSync(path.join(`${__dirname}//src//script//${pathToPage}${documentType}`), {
+        encoding: 'utf8'
+      });  
+      response.writeHead(200, {'Content-Type': contentType ,'Content-Length': document.length});
+      response.write(document);
+      response.end();
+    }
+    catch (err)
+    {
+      response.writeHead(500, {'Content-Type': contentType});
       response.end();
     }
 }
