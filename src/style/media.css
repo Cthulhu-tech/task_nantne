@@ -215,7 +215,7 @@
     display: flex;
   }
 }
-@media screen and (orientation: landscape) {
+@media (orientation: landscape) {
   .mobile_navigation_ul {
     flex-direction: row;
   }
